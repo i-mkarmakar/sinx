@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link id="logo-light" rel="icon" type="image/x-icon" href="/logo-light.ico" />
+  <link id="logo-dark" rel="icon" type="image/x-icon" href="/logo-dark.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SinX – Transform code between languages effortlessly.</title>
+  <script>
+
+    if (localStorage.theme === 'dark') {
+      document.documentElement.classList.add('dark');
+      document.getElementById('favicon-light')?.remove();
+    } else {
+      document.documentElement.classList.remove('dark');
+      document.getElementById('favicon-dark')?.remove();
+    }
+
+    window.addEventListener('storage', function (e) {
+      if (e.key === 'theme') {
+        const isDark = e.newValue === 'dark';
+        const lightFavicon = document.getElementById('logo-light');
+        const darkFavicon = document.getElementById('logo-dark');
+
+        if (isDark) {
+          lightFavicon?.remove();
+          if (!darkFavicon) {
+            const link = document.createElement('link');
+            link.id = 'logo-dark';
+            link.rel = 'icon';
+            link.href = '/logo-dark-dark.ico';
+            document.head.appendChild(link);
+          }
+        } else {
+          darkFavicon?.remove();
+          if (!lightFavicon) {
+            const link = document.createElement('link');
+            link.id = 'logo-light';
+            link.rel = 'icon';
+            link.href = '/logo-light.ico';
+            document.head.appendChild(link);
+          }
+        }
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

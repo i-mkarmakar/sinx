@@ -2,7 +2,7 @@
 
 ## ⚙ Introduction
 
-**SinX** is a revolutionary **AI-Powered Code Transformation Platform** designed to empower developers to seamlessly convert code between different programming languages.  
+**SinX** is a **AI-Powered Code Transformation Platform** designed to empower developers to seamlessly convert code between different programming languages.  
 
 ---
 

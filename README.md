@@ -104,8 +104,8 @@ Contributions are welcome! To contribute:
 ## 💬 Support
 
 For support or inquiries, please contact:  
-- **GitHub Issues**: [Report an Issue](https://github.com/its-mkarmakar/SinX/issues)  
-- **LinkedIn**: [Manish Karmakar](https://www.linkedin.com/in/manishkarmakar)
+- **GitHub Issues**: [Report an Issue](https://github.com/i-mkarmakar/SinX/issues)  
+- **LinkedIn**: [Manish Karmakar](https://www.linkedin.com/in/imkarmakar)
 
 
 Thank you for using **SinX**! Transform code between languages effortlessly.
